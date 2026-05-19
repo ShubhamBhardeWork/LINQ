@@ -8,3 +8,11 @@
     1. Collections [List, Array]
     1. Databases [Entity Framework Core]
     1. XML & JSON
+
+## Why LINQ?
+- Improves readability.
+- Reduces boilerplate code [Avoids long loops and manual filtering]
+- Strongly typed (compile-time checking).
+- Easy filtering, sorting, grouping, projection.
+- Common syntax for multiple data sources.
+
