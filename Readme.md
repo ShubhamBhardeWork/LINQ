@@ -21,3 +21,8 @@
 1. LINQ to Objects
 1. LINQ to Entities
 1. LINQ to SQL
+
+
+## LINQ Syntax Types:-
+1. Query Syntax
+1. Method Syntax (most preferred & widely used in industry)
