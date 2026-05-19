@@ -26,3 +26,24 @@
 ## LINQ Syntax Types:-
 1. Query Syntax
 1. Method Syntax (most preferred & widely used in industry)
+
+
+## Deferred Execution:-
+- Deferred Execution means query does not execute immediately when defined.
+
+- LINQ query executes only when data is actually iterated or materialized.
+
+- Improves performance by avoiding unnecessary execution.
+
+**NOTE:- Deferred execution is useful because query composition can happen before actual execution.**
+
+
+## Immediate Execution:-
+- Query executes immediately and stores result in memory.
+
+### Immediate Execution Methods:-
+1. .ToList()
+1. .ToArray()
+1. .Count()
+1. .First() & .FirstOrDefault()
+1. .Single() & .SingleOrDefault()
