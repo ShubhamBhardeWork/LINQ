@@ -16,3 +16,8 @@
 - Easy filtering, sorting, grouping, projection.
 - Common syntax for multiple data sources.
 
+
+## Types of LINQ:-
+1. LINQ to Objects
+1. LINQ to Entities
+1. LINQ to SQL
