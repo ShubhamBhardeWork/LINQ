@@ -47,3 +47,36 @@
 1. .Count()
 1. .First() & .FirstOrDefault()
 1. .Single() & .SingleOrDefault()
+
+
+
+## IEnumerable vs IQueryable:-
+### IEnumerable:-
+- Works with in-memory collections
+- Data fetched first, then filtering happens in memory
+- used in LINQ to Objects
+- Less efficient for huge data
+
+```cs
+IEnumerable<User> users = context.Users.ToList();
+
+var filteredUsers = context.Users.ToList().Where(x => x.Age > 20);
+```
+
+### IQueryable:-
+- Works with databases
+- Filtering happens at database level
+- used in LINQ to Entities
+- Better performance for huge data
+- IQueryable fetches only required data from database, reducing memory usage and improving performance.
+- IQueryable supports deferred execution and query composition before execution.
+
+```cs
+IQueryable<User> users = context.Users;
+
+var filteredUsers = context.Users.Where(x => x.Age > 18);
+```
+
+```I avoid calling ToList() too early because it fetches all data into memory. I prefer filtering with IQueryable before materializing data to improve performance and reduce memory usage.```
+
+**NOTE:- IQueryable converts LINQ queries into SQL and executes them on the database side.**
