@@ -94,3 +94,16 @@ SQL Executes in Database
    ↓
 Data Returned
 ```
+
+## Best Practices
+- Use IQueryable before fetching data.
+
+- Use projection (Select) instead of fetching whole entity.
+
+- Use AsNoTracking() for read-only operations.
+
+- Avoid early ToList().
+
+- Use pagination for huge data.
+
+- Use async methods in EF Core:
