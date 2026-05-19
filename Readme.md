@@ -80,3 +80,17 @@ var filteredUsers = context.Users.Where(x => x.Age > 18);
 ```I avoid calling ToList() too early because it fetches all data into memory. I prefer filtering with IQueryable before materializing data to improve performance and reduce memory usage.```
 
 **NOTE:- IQueryable converts LINQ queries into SQL and executes them on the database side.**
+
+
+## LINQ Execution Flow in EF Core:-
+```sh
+LINQ Query
+   ↓
+Expression Tree
+   ↓
+EF Core Converts to SQL
+   ↓
+SQL Executes in Database
+   ↓
+Data Returned
+```
