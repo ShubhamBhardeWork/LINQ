@@ -98,27 +98,73 @@ Data Returned
 
 ## LINQ Methods:-
 1. .Select()
+   - Projection or transfromation of data.
+
 1. .SelectMany()
+   - Flatten nested collections.
+
 1. .Where()
+   - Filters data.
+
 1. .FirstOrDefault()
+   - Returns `first matching element` or `default value` if not found.
+
 1. .SingleOrDefault()
+   - Returns `single matching element` or `default value` if not found.
+
 1. .Contains()
+   - Checks whether a value exists or not in a collection 
+   
 1. .Any()
+   - Checks whether at least one element satisfy a condition.
+   - Any() method is optimized for existence checking because it stops once match is found.
+
 1. .All()
+   - Checks whether all elements satisfy a condition.
+
 1. .Count()
+   - Returns the total number of elements.
+
 1. .Distinct()
+   - return Unique values/elements (Removes duplicates)
+   
 1. .OrderBy()
+   - Sorts data in ascending order.
+
 1. .OrderByDescending()
+   - Sorts data in descneding order.
+
 1. .ThenBy()
+   - Secondary sorting data in ascending order.
+
 1. .ThenByDescending()
+   - Secondary sorting data in descneding order.
+
 1. .Skip()
+   - Skips a specified number of elements.
+
 1. .Take()
+   - Returns a specified number of elements.
+
 1. .GroupBy()
+   - Groups elements based on a key.
+
 1. .Join()
+   - Combines two collections based on a common key.
+
 1. .ToArray()
+   - Convert to Array.
+
 1. .ToList()
+   - Convert to List.
+
 1. .First()
-1. .SIngle()
+   - Returns the `first matching element` else `exception`.
+
+1. .Single()
+   - Returns `exactly one matching record` else `exception if no record or multiple records found`.
+
+
 
 
 ## Best Practices
