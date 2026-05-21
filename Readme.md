@@ -95,6 +95,32 @@ SQL Executes in Database
 Data Returned
 ```
 
+
+## LINQ Methods:-
+1. .Select()
+1. .SelectMany()
+1. .Where()
+1. .FirstOrDefault()
+1. .SingleOrDefault()
+1. .Contains()
+1. .Any()
+1. .All()
+1. .Count()
+1. .Distinct()
+1. .OrderBy()
+1. .OrderByDescending()
+1. .ThenBy()
+1. .ThenByDescending()
+1. .Skip()
+1. .Take()
+1. .GroupBy()
+1. .Join()
+1. .ToArray()
+1. .ToList()
+1. .First()
+1. .SIngle()
+
+
 ## Best Practices
 - Use IQueryable before fetching data.
 
